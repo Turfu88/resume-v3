@@ -1,0 +1,78 @@
+html, body {
+    background: #0F114A;
+    background: -webkit-linear-gradient(bottom right, #0F114A, #6C70FF);
+    background: -moz-linear-gradient(bottom right, #0F114A, #6C70FF);
+    background: linear-gradient(to top left, #0F114A, #6C70FF);
+}
+
+.App {
+    padding: 0 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.container-sm {
+    background-color: white;
+}
+
+.primary {
+    color: #3639a4 !important;
+}
+
+.bg-primary {
+    background-color: #3639a4 !important;
+    color: white;
+}
+
+.bd-primary {
+    border-color: #3639a4 !important;
+}
+
+.secondary {
+    color: #e5721b !important;
+}
+
+.bg-secondary {
+    background-color: #e5721b !important;
+}
+
+.bd-secondary {
+    border-color: #e5721b !important;
+}
+
+.link-primary {
+    text-decoration: none;
+    color: black !important;
+    text-decoration: underline;
+}
+
+.link-primary:hover {
+    color: #3639a4 !important;
+}
+
+.responsive-header {
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.timeline {
+    padding: 15px;
+    @media screen and (min-width: 768px) {
+        padding: 45px;
+    }
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+ .card-shadow {
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+ }
