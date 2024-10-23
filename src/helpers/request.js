@@ -1,5 +1,5 @@
 
-export default async function request(url, method = "POST", values = null, includeCookie = false) {
+export default async function request(url, method = "POST", values = null) {
     let myHeaders = new Headers();
     if (method === "PATCH") {
         myHeaders.append("Content-Type", "application/merge-patch+json");

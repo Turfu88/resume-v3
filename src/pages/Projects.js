@@ -36,9 +36,13 @@ export function Projects(props) {
                         <section id={project.id} key={key}>
                             <div className={key % 2 !== 0 ? 'row timeline pb-4 flex-row-reverse' : 'row timeline pb-4'}>
                                 <div className='col-12 col-md-7 mb-4'>
+                                {project.redirection_url.url !== '' ?
                                     <a href={project.redirection_url.url} target="_blank" rel="noreferrer">
                                         <img src={project.image.filename} className="img-fluid" alt={project.image.alt} />
                                     </a>
+                                    :
+                                    <img src={project.image.filename} className="img-fluid" alt={project.image.alt} />
+                                }
                                 </div>
                                 <div className='col-12 col-md-5'>
                                     <div className='bg-light rounded p-3'>
